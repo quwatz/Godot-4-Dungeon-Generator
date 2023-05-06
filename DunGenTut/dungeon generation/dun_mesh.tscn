@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bc1uku3eiv648"]
+
+[ext_resource type="Script" path="res://dungeon generation/DunMesh.gd" id="1_l5ia4"]
+
+[node name="DunMesh" type="Node3D"]
+script = ExtResource("1_l5ia4")
+grid_map_path = NodePath("../GridMap")

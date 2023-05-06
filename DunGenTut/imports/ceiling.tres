@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://dogt7gmvynypt"]
+
+[ext_resource type="Texture2D" uid="uid://cvewhq4x36jhm" path="res://imports/DunCell_TexturesCom_Pavement_CobblestoneStreet5_2x2_1K_albedo.png" id="1_sv531"]
+[ext_resource type="Texture2D" uid="uid://cmnikjkgv3d16" path="res://imports/DunCell_TexturesCom_Pavement_CobblestoneStreet5_2x2_1K_normals.png" id="2_0jan0"]
+
+[resource]
+resource_name = "ceiling"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_sv531")
+metallic = 0.34
+roughness = 0.36
+normal_enabled = true
+normal_texture = ExtResource("2_0jan0")
+uv1_scale = Vector3(0.935, 0.935, 0.935)
+uv1_triplanar = true
+uv1_world_triplanar = true
+texture_filter = 2

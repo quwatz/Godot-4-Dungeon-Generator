@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://bd1nqokk522gr"]
+
+[sub_resource type="Environment" id="Environment_rjkdo"]
+ambient_light_source = 2
+ambient_light_color = Color(0.729412, 0.741176, 0.745098, 1)
+ambient_light_energy = 2.59
+reflected_light_source = 1
+tonemap_mode = 3
+tonemap_exposure = 1.61
+tonemap_white = 6.57
+ssr_enabled = true
+ssr_fade_in = 1.75691
+ssao_enabled = true
+ssao_horizon = 1.0
+ssao_sharpness = 1.0
+ssil_enabled = true
+ssil_radius = 3.32
+ssil_intensity = 1.02
+ssil_sharpness = 1.0
+sdfgi_read_sky_light = false
+fog_enabled = true
+fog_light_color = Color(0.298039, 0.305882, 0.337255, 1)
+fog_light_energy = 0.83
+fog_density = 0.1299
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.2124
+volumetric_fog_albedo = Color(0, 0, 0, 1)
+volumetric_fog_emission = Color(0.168627, 0.172549, 0.188235, 1)
+volumetric_fog_ambient_inject = 2.79
+adjustment_enabled = true
+adjustment_brightness = 1.15
+adjustment_contrast = 1.35
+
+[sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_xkln5"]
+
+[sub_resource type="FogMaterial" id="FogMaterial_h10rs"]
+density = 0.1658
+albedo = Color(0, 0, 0, 1)
+emission = Color(0.184314, 0.196078, 0.223529, 1)
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+environment = SubResource("Environment_rjkdo")
+camera_attributes = SubResource("CameraAttributesPhysical_xkln5")
+
+[node name="FogVolume" type="FogVolume" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.57085, 0)
+shape = 4
+material = SubResource("FogMaterial_h10rs")

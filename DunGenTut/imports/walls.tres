@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://cmx524f0yfom0"]
+
+[ext_resource type="Texture2D" uid="uid://huc052xwvnuq" path="res://imports/DunCell_TexturesCom_MixedMedievalBricks_1K_albedo.png" id="1_po138"]
+[ext_resource type="Texture2D" uid="uid://pvcdfq7dtuvs" path="res://imports/DunCell_TexturesCom_MixedMedievalBricks_1K_normals.png" id="2_bo2jh"]
+
+[resource]
+resource_name = "walls"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_po138")
+roughness = 0.583636
+normal_enabled = true
+normal_scale = 0.99
+normal_texture = ExtResource("2_bo2jh")
+uv1_scale = Vector3(0.6, 0.6, 0.6)
+uv1_triplanar = true
+uv1_world_triplanar = true
+uv2_scale = Vector3(1.005, 1.005, 1.005)
+texture_filter = 2

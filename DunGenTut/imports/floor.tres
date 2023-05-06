@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://dgw3ja14i3vne"]
+
+[ext_resource type="Texture2D" uid="uid://pypg3e77tne3" path="res://imports/DunCell_TexturesCom_Cement_1x1_512_albedo.png" id="1_xdrkc"]
+[ext_resource type="Texture2D" uid="uid://dkg7jbmwlbl8g" path="res://imports/DunCell_TexturesCom_Cement_1x1_512_normals.png" id="2_cw2mt"]
+
+[resource]
+resource_name = "floor"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.772549, 0.764706, 0.713726, 1)
+albedo_texture = ExtResource("1_xdrkc")
+metallic = 0.18
+roughness = 0.38
+normal_enabled = true
+normal_scale = 1.8
+normal_texture = ExtResource("2_cw2mt")
+uv1_scale = Vector3(0.914, 0.914, 0.914)
+uv1_triplanar = true
+uv1_world_triplanar = true
+texture_filter = 2
