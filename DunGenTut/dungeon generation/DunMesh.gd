@@ -55,6 +55,7 @@ func create_dungeon():
 			var dun_cell : Node3D = dun_cell_scene.instantiate()
 			dun_cell.position = Vector3(cell) + Vector3(0.5,0,0.5)
 			add_child(dun_cell)
+			dun_cell.set_owner(owner)
 			t +=1
 			for i in 4:
 				var cell_n : Vector3i = cell + directions.values()[i]
